@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void) {
+    float basicSalary;
+    float da, hra;
+    float totalSalary;
+
+    // Input basic salary
+    printf("Enter basic salary: ");
+    scanf("%f", &basicSalary);
+
+    // Calculate allowances
+    da = 0.40 * basicSalary;   // 40% Dearness Allowance
+    hra = 0.20 * basicSalary;  // 20% House Rent Allowance
+
+    // Total salary
+    totalSalary = basicSalary + da + hra;
+
+    // Output results
+    printf("\nBasic Salary: %.2f", basicSalary);
+    printf("\nDearness Allowance (40%%): %.2f", da);
+    printf("\nHouse Rent Allowance (20%%): %.2f", hra);
+    printf("\nTotal Salary: %.2f\n", totalSalary);
+
+    return 0;
+}
